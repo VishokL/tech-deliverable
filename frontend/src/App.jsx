@@ -51,24 +51,29 @@ function App() {
         <div>
           <nav
             className="navbar navbar-expand-lg"
-            style={{ paddingLeft: "10px" }}
+            style={{
+              paddingLeft: "10px",
+              border: "2px solid lightgray",
+              height: "8vh",
+              display: "flex",
+              alignItems: "center",
+            }}
           >
-            <h1
+            <img
+              src="../img/quotebook.png"
+              alt="Quote Book Icon"
+              style={{ width: "32px", height: "32px", marginRight: "16px" }}
+            />
+            <h4
               className="navbar-text"
               style={{
-                display: "flex",
-                alignItems: "center",
                 color: "#2b2c34",
                 fontWeight: "bold",
+                margin: 0,
               }}
             >
-              <img
-                src="../img/quotebook.png"
-                alt="Quote Book Icon"
-                style={{ width: "40px", height: "40px", marginRight: "10px" }}
-              />
               Hack at UCI Tech Deliverable
-            </h1>
+            </h4>
           </nav>
 
           <h2>Submit a quote</h2>
@@ -96,10 +101,8 @@ function App() {
           <div
             className="messages"
             style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "20px",
-              justifyContent: "center",
+              columnCount: 4,
+              columnGap: "12px",
             }}
           >
             {response.length > 0 ? (
@@ -117,13 +120,13 @@ function App() {
                   <div
                     key={index}
                     style={{
-                      flex: "0 1 calc(33.333% - 20px)",
                       backgroundColor: randomColor,
                       borderRadius: "10px",
                       padding: "20px",
-                      minHeight: "150px",
+                      marginBottom: "12px",
                       color: "white",
                       boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                      breakInside: "avoid",
                     }}
                   >
                     <p>
