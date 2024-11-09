@@ -12,7 +12,6 @@ function App() {
   }, [maxAge]);
 
   const getQuotebook = () => {
-    setIsLoading(true);
     axios
       .get(`/api/quotebook?max_age=${maxAge}`)
       .then((res) => {
@@ -114,13 +113,12 @@ function App() {
                   "#F29559",
                   "#ED474A",
                 ];
-                const randomColor =
-                  colors[Math.floor(Math.random() * colors.length)];
+                const color = colors[index % colors.length];
                 return (
                   <div
                     key={index}
                     style={{
-                      backgroundColor: randomColor,
+                      backgroundColor: color,
                       borderRadius: "10px",
                       padding: "20px",
                       marginBottom: "12px",
