@@ -1,2 +1,6 @@
 .loading-screen {
 }
+
+.form-control:focus {
+  box-shadow: none;
+}
