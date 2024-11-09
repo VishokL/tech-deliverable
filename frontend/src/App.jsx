@@ -4,14 +4,15 @@ import "./App.css";
 
 function App() {
   const [response, setResponse] = React.useState("");
+  const [maxAge, setMaxAge] = React.useState("all");
 
   React.useEffect(() => {
     getQuotebook();
-  }, []);
+  }, [maxAge]);
 
   const getQuotebook = () => {
     axios
-      .get("/api/quotebook")
+      .get(`/api/quotebook?max_age=${maxAge}`)
       .then((res) => {
         setResponse(res.data);
       })
@@ -49,6 +50,18 @@ function App() {
         <input type="text" name="message" id="input-message" required />
         <button type="submit">Submit</button>
       </form>
+
+      <h2>Filter Quotes</h2>
+      <select
+        value={maxAge}
+        onChange={(e) => setMaxAge(e.target.value)}
+        aria-label="Filter quotes by age"
+      >
+        <option value="all">All</option>
+        <option value="week">Last Week</option>
+        <option value="month">Last Month</option>
+        <option value="year">Last Year</option>
+      </select>
 
       <h2>Previous Quotes</h2>
       {/* TODO: Display the actual quotes from the database */}
