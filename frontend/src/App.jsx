@@ -20,6 +20,21 @@ function App() {
       });
   };
 
+  const submitForm = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    axios
+      .post("/api/quote", formData)
+      .then(() => {
+        getQuotebook();
+        e.target.reset();
+      })
+      .catch((err) => {
+        console.error("Error submitting quote:", err);
+      });
+  };
+
   return (
     <div className="App">
       {/* TODO: include an icon for the quote book */}
@@ -27,7 +42,7 @@ function App() {
 
       <h2>Submit a quote</h2>
       {/* TODO: implement custom form submission logic to not refresh the page */}
-      <form action="/api/quote" method="post">
+      <form onSubmit={submitForm}>
         <label htmlFor="input-name">Name</label>
         <input type="text" name="name" id="input-name" required />
         <label htmlFor="input-message">Quote</label>
