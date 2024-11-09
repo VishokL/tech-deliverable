@@ -49,7 +49,10 @@ function App() {
         </div>
       ) : (
         <div>
-          <nav className="navbar navbar-expand-lg">
+          <nav
+            className="navbar navbar-expand-lg"
+            style={{ paddingLeft: "10px" }}
+          >
             <h1
               className="navbar-text"
               style={{
@@ -90,16 +93,48 @@ function App() {
           </select>
 
           <h2>Previous Quotes</h2>
-          <div className="messages">
+          <div
+            className="messages"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "20px",
+              justifyContent: "center",
+            }}
+          >
             {response.length > 0 ? (
-              response.map((quote, index) => (
-                <div key={index}>
-                  <p>
-                    {quote.name}: {quote.message}
-                  </p>
-                  <p>{new Date(quote.time).toLocaleString()}</p>
-                </div>
-              ))
+              response.map((quote, index) => {
+                const colors = [
+                  "#966b9d",
+                  "#0090C1",
+                  "#9CE37D",
+                  "#F29559",
+                  "#ED474A",
+                ];
+                const randomColor =
+                  colors[Math.floor(Math.random() * colors.length)];
+                return (
+                  <div
+                    key={index}
+                    style={{
+                      flex: "0 1 calc(33.333% - 20px)",
+                      backgroundColor: randomColor,
+                      borderRadius: "10px",
+                      padding: "20px",
+                      minHeight: "150px",
+                      color: "white",
+                      boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                    }}
+                  >
+                    <p>
+                      <strong>{quote.name}</strong>: {quote.message}
+                    </p>
+                    <p style={{ fontStyle: "italic" }}>
+                      {new Date(quote.time).toLocaleString()}
+                    </p>
+                  </div>
+                );
+              })
             ) : (
               <p>No quotes available.</p>
             )}
