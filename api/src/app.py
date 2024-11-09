@@ -1,10 +1,12 @@
 from contextlib import asynccontextmanager
 from datetime import datetime
+
 from typing import AsyncIterator
+from typing_extensions import TypedDict
 
 from fastapi import FastAPI, Form, status
 from fastapi.responses import RedirectResponse
-from typing_extensions import TypedDict
+from fastapi.middleware.cors import CORSMiddleware
 
 from services.database import JSONDatabase
 
@@ -32,6 +34,14 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 app = FastAPI(lifespan=lifespan)
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 @app.post("/quote")
 def post_message(name: str = Form(), message: str = Form()) -> RedirectResponse:
@@ -48,3 +58,6 @@ def post_message(name: str = Form(), message: str = Form()) -> RedirectResponse:
 
 
 # TODO: add another API route with a query parameter to retrieve quotes based on max age
+@app.get("/quotebook")
+def get_messages():
+    return database["quotes"]
