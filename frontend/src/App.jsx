@@ -49,7 +49,24 @@ function App() {
         </div>
       ) : (
         <div>
-          <h1>Hack at UCI Tech Deliverable</h1>
+          <nav className="navbar navbar-expand-lg">
+            <h1
+              className="navbar-text"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                color: "#2b2c34",
+                fontWeight: "bold",
+              }}
+            >
+              <img
+                src="../img/quotebook.png"
+                alt="Quote Book Icon"
+                style={{ width: "40px", height: "40px", marginRight: "10px" }}
+              />
+              Hack at UCI Tech Deliverable
+            </h1>
+          </nav>
 
           <h2>Submit a quote</h2>
           <form onSubmit={submitForm}>
