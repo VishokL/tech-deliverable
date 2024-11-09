@@ -60,6 +60,23 @@ def post_message(name: str = Form(), message: str = Form()) -> RedirectResponse:
 # TODO: add another API route with a query parameter to retrieve quotes based on max age
 @app.get("/quotebook")
 def get_messages(max_age: str = Query("all")):
+    """
+    Retrieve quotes from the database with optional filtering by age.
+
+    Args:
+        max_age (str): Filter for the maximum age of quotes to retrieve. 
+                       Options are "all", "week", "month", or "year".
+                       Defaults to "all", which retrieves all quotes.
+
+    Returns:
+        dict: A list of quotes from the database. If max_age is specified, only
+              quotes from within the specified timeframe are returned.
+              The timeframes are:
+              - "week": Past 7 days
+              - "month": Past 30 days
+              - "year": Past 365 days
+    """
+
     time_now = datetime.now()
 
     age_map = {
