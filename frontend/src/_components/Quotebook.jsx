@@ -1,6 +1,29 @@
 import React from "react";
+import Quote from "./Quote";
+import "./Quotebook.css";
+
+function getColorByName(name) {
+  const colors = ["#966b9d", "#0090C1", "#4fc73a", "#F29559", "#ED474A"];
+  let hash = 0;
+  // Multiply hash by 31 before each letter is added.
+  for (let i = 0; i < name.length; i++) {
+    hash = name.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const index = Math.abs(hash) % colors.length;
+  return colors[index];
+}
 
 function Quotebook({ response, maxAge, setMaxAge }) {
+  const columnCount = 4;
+  let columns = [];
+
+  if (response.length > 0) {
+    columns = Array.from({ length: columnCount }, () => []);
+    response.forEach((quote, index) => {
+      columns[index % columnCount].push(quote);
+    });
+  }
+
   return (
     <>
       <div
@@ -13,13 +36,7 @@ function Quotebook({ response, maxAge, setMaxAge }) {
           alignItems: "flex-end",
         }}
       >
-        <h4
-          style={{
-            color: "#2b2c34",
-            fontWeight: "bold",
-            margin: 0,
-          }}
-        >
+        <h4 style={{ color: "#2b2c34", fontWeight: "bold", margin: 0 }}>
           Quotebook
         </h4>
         <select
@@ -41,50 +58,23 @@ function Quotebook({ response, maxAge, setMaxAge }) {
         </select>
       </div>
 
-      <div
-        className="messages"
-        style={{
-          columnCount: 4,
-          columnGap: "12px",
-        }}
-      >
-        {response.length > 0 ? (
-          response.map((quote, index) => {
-            const colors = [
-              "#966b9d",
-              "#0090C1",
-              "#4fc73a",
-              "#F29559",
-              "#ED474A",
-            ];
-            const color = colors[index % colors.length];
-            return (
-              <div
-                key={index}
-                style={{
-                  backgroundColor: color,
-                  borderRadius: "10px",
-                  padding: "16px 20px 8px 20px",
-                  marginBottom: "12px",
-                  color: "#faf9f6",
-                  boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                  breakInside: "avoid",
-                  overflowWrap: "break-word",
-                }}
-              >
-                <p>
-                  <strong>{quote.name}</strong>: {quote.message}
-                </p>
-                <p style={{ fontStyle: "italic" }}>
-                  {new Date(quote.time).toLocaleString()}
-                </p>
-              </div>
-            );
-          })
-        ) : (
-          <p>No quotes available.</p>
-        )}
-      </div>
+      {response.length > 0 ? (
+        <div className="quote-columns">
+          {columns.map((col, colIndex) => (
+            <div key={colIndex} className="quote-column">
+              {col.map((quote, index) => (
+                <Quote
+                  key={index}
+                  quote={quote}
+                  getColorByName={getColorByName}
+                />
+              ))}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>No quotes available.</p>
+      )}
     </>
   );
 }

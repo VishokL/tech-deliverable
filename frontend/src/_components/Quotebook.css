@@ -1,0 +1,41 @@
+.quote-columns {
+  display: flex;
+  gap: 12px;
+}
+
+.quote-column {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-card {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 20px 8px 20px;
+  margin-bottom: 12px;
+  color: #faf9f6;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.quote-header {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 1.2em;
+  transition: max-height 0.3s ease, white-space 0.3s ease;
+}
+
+.quote-footer {
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.quote-card:hover .quote-header {
+  white-space: normal;
+  max-height: 500px;
+}
