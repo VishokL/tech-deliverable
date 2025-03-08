@@ -1,6 +1,37 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.quotebook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px 8px;
+}
+
+.quotebook-header h4 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.form-select {
+  width: 128px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
 .quote-columns {
   display: flex;
   gap: 12px;
+  padding: 0 16px;
 }
 
 .quote-column {
@@ -11,18 +42,24 @@
 }
 
 .quote-card {
-  width: 100%;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 16px 20px 8px 20px;
-  margin-bottom: 12px;
-  color: #faf9f6;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.quote-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .quote-header {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -30,12 +67,18 @@
   transition: max-height 0.3s ease, white-space 0.3s ease;
 }
 
-.quote-footer {
-  font-style: italic;
-  margin-top: 4px;
-}
-
 .quote-card:hover .quote-header {
   white-space: normal;
   max-height: 500px;
+}
+
+.quote-footer {
+  font-size: 14px;
+  color: #777;
+}
+
+.no-quotes {
+  text-align: center;
+  font-size: 18px;
+  margin: 24px;
 }

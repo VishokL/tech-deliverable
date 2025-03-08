@@ -1,309 +1,304 @@
 {
-	"quotes": [
-		{
-			"name": "Peter Anteater",
-			"message": "Zot Zot Zot!",
-			"time": "1965-11-30T13:52:09"
-		},
-		{
-			"name": "rieko",
-			"message": "Drink more water",
-			"time": "2021-02-21T22:34:59"
-		},
-		{
-			"name": "t\u00e6",
-			"message": "slay, girlboss",
-			"time": "2022-11-03T20:23:54"
-		},
-		{
-			"name": "pham",
-			"message": "i'm a resident gaslighter",
-			"time": "2023-01-25T17:58:31"
-		},
-		{
-			"name": "randy",
-			"message": "I love technology",
-			"time": "2023-02-15T16:46:22"
-		},
-		{
-			"name": "Jane Doe",
-			"message": "This quote is quite a bit longer than the other ones just to make things interesting. This shouldn't be too difficult to handle, but your design should be able to adapt to all sorts of edge cases. Will your application be able to handle this properly? Or will the text spill over atrociously or even get cut off? Also, how are you doing? I hope you're doing well. Have a Hack at UCI day!",
-			"time": "2023-03-02T11:48:17"
-		},
-		{
-			"name": "Josh Smith",
-			"message": "Testing testing, is this thing on?",
-			"time": "2023-03-02T11:51:06"
-		},
-		{
-			"name": "Ru",
-			"message": "no, don't slay me",
-			"time": "2023-03-03T20:06:23"
-		},
-		{
-			"name": "nate",
-			"message": "yes chef!",
-			"time": "2023-04-28T11:19:12"
-		},
-		{
-			"name": "Alan",
-			"message": "I want to get the chicken fried chicken. It\u2019s also vegan",
-			"time": "2023-08-11T19:01:06"
-		},
-		{
-			"name": "randy",
-			"message": "I was basically here every single time... except half the time",
-			"time": "2023-08-18T15:15:13"
-		},
-		{
-			"name": "wiley",
-			"message": "There\u2019s been lots of complications: as Sydnee would say, \u201cI hate it here\u201d",
-			"time": "2023-09-22T22:00:00"
-		},
-		{
-			"name": "asdsadas",
-			"message": "asdasdas",
-			"time": "2023-11-07T15:29:54"
-		},
-		{
-			"name": "grgsd",
-			"message": "asdas",
-			"time": "2023-11-08T15:50:35"
-		},
-		{
-			"name": "a",
-			"message": "a",
-			"time": "2024-01-08T16:02:27"
-		},
-		{
-			"name": "dasd",
-			"message": "asdas",
-			"time": "2024-11-01T16:06:07"
-		},
-		{
-			"name": "test",
-			"message": "asdada",
-			"time": "2024-10-31T16:07:57"
-		},
-		{
-			"name": "asdsaasdsad",
-			"message": "asdasda",
-			"time": "2024-10-18T16:30:46"
-		},
-		{
-			"name": "testt",
-			"message": "tt",
-			"time": "2024-11-01T16:32:38"
-		},
-		{
-			"name": "a",
-			"message": "a",
-			"time": "2024-11-08T16:59:38"
-		},
-		{
-			"name": "a",
-			"message": "a",
-			"time": "2024-11-08T16:59:38"
-		},
-		{
-			"name": "asda",
-			"message": "asdas",
-			"time": "2024-11-08T16:59:38"
-		},
-		{
-			"name": "a",
-			"message": "a",
-			"time": "2024-11-02T16:59:45"
-		},
-		{
-			"name": "a",
-			"message": "a",
-			"time": "2024-11-08T17:05:07"
-		},
-		{
-			"name": "asdas",
-			"message": "asdasd",
-			"time": "2024-11-08T17:07:04"
-		},
-		{
-			"name": "qwer",
-			"message": "xcv",
-			"time": "2024-11-08T17:32:16"
-		},
-		{
-			"name": "lorem",
-			"message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-			"time": "2024-11-08T19:37:29"
-		},
-		{
-			"name": "adasdas",
-			"message": "asdasd",
-			"time": "2024-11-08T19:37:45"
-		},
-		{
-			"name": "asdasda",
-			"message": "asdasd",
-			"time": "2024-11-08T19:37:48"
-		},
-		{
-			"name": "sadasdasd",
-			"message": "asdasdasd",
-			"time": "2024-11-08T19:37:56"
-		},
-		{
-			"name": "sadasda",
-			"message": "asdasdasd",
-			"time": "2024-11-08T19:38:02"
-		},
-		{
-			"name": "asdasd",
-			"message": "sadasdasd",
-			"time": "2024-11-08T19:38:06"
-		},
-		{
-			"name": "asdasdas",
-			"message": "asdasdsadsa",
-			"time": "2024-11-08T19:42:25"
-		},
-		{
-			"name": "SANSHRAY",
-			"message": "D",
-			"time": "2024-11-08T19:43:09"
-		},
-		{
-			"name": "ERUC",
-			"message": "T",
-			"time": "2024-11-08T19:43:13"
-		},
-		{
-			"name": "ASDASD",
-			"message": "ADASDS",
-			"time": "2024-11-08T19:43:35"
-		},
-		{
-			"name": "asdsad",
-			"message": "asdasdsa",
-			"time": "2024-11-08T19:44:00"
-		},
-		{
-			"name": "sadasdas",
-			"message": "sadasda",
-			"time": "2024-11-08T19:50:39"
-		},
-		{
-			"name": "asdas",
-			"message": "asdas",
-			"time": "2024-11-08T19:50:41"
-		},
-		{
-			"name": "asdasd",
-			"message": "asdas",
-			"time": "2024-11-08T19:50:43"
-		},
-		{
-			"name": "sadsa",
-			"message": "sadasasd",
-			"time": "2024-11-08T19:51:29"
-		},
-		{
-			"name": "343vdss12",
-			"message": "sad2",
-			"time": "2024-11-08T19:51:44"
-		},
-		{
-			"name": "2",
-			"message": "asdas",
-			"time": "2024-11-08T19:52:22"
-		},
-		{
-			"name": "asdfas",
-			"message": "asdasd",
-			"time": "2024-11-08T19:52:30"
-		},
-		{
-			"name": "hfdgdfg",
-			"message": "fdgdfgdfgf",
-			"time": "2024-11-08T19:53:43"
-		},
-		{
-			"name": "safasf",
-			"message": "asfsafasf",
-			"time": "2024-11-08T20:08:02"
-		},
-		{
-			"name": "12345",
-			"message": "sadbasuidbasuidbasiudbasuibdiuasbdiusabiduasbdiubasuidbuiasbdiuasbdiuasbuidsbaidbsuibuid",
-			"time": "2024-11-08T20:19:12"
-		},
-		{
-			"name": "asdsaasdsad",
-			"message": "asdasdasd",
-			"time": "2024-11-08T22:00:04"
-		},
-		{
-			"name": "Hello World",
-			"message": "From me to you!",
-			"time": "2024-11-08T23:34:14"
-		},
-		{
-			"name": "HI DUDE",
-			"message": "HEY",
-			"time": "2024-11-08T23:34:25"
-		},
-		{
-			"name": "gbgbgb",
-			"message": "g bgbg",
-			"time": "2024-11-08T23:34:47"
-		},
-		{
-			"name": "HELLO DUDE",
-			"message": "HEY WHAT'S UP",
-			"time": "2024-11-08T23:37:17"
-		},
-		{
-			"name": "HWOHIDWAIOIOHADWADW",
-			"message": "ADNKLWANKJSKJASDANWjkaDN",
-			"time": "2024-11-08T23:38:40"
-		},
-		{
-			"name": "asdbiasdbu",
-			"message": "asdubasudabuio",
-			"time": "2024-11-08T23:41:34"
-		},
-		{
-			"name": "asdasdasd",
-			"message": "213721874267",
-			"time": "2024-11-08T23:43:32"
-		},
-		{
-			"name": "asfsaf",
-			"message": "sdafasfasfa",
-			"time": "2024-11-08T23:47:58"
-		},
-		{
-			"name": "64654",
-			"message": "46464",
-			"time": "2024-11-08T23:48:08"
-		},
-		{
-			"name": "asdasd",
-			"message": "213412412",
-			"time": "2024-11-08T23:48:44"
-		},
-		{
-			"name": "asdnasoudba",
-			"message": "124721478124871287",
-			"time": "2024-11-09T00:00:08"
-		},
-		{
-			"name": "532532523523",
-			"message": "asdasd",
-			"time": "2024-11-09T00:00:16"
-		},
-		{
-			"name": "erac",
-			"message": "loar a a\r\na da da \r\n\r\na d ",
-			"time": "2025-03-07T19:20:27"
-		}
-	]
+  "quotes": [
+    {
+      "name": "532532523523",
+      "message": "asdasd",
+      "time": "2024-11-09T00:00:16"
+    },
+    {
+      "name": "asdnasoudba",
+      "message": "124721478124871287",
+      "time": "2024-11-09T00:00:08"
+    },
+    {
+      "name": "asdasd",
+      "message": "213412412",
+      "time": "2024-11-08T23:48:44"
+    },
+    {
+      "name": "64654",
+      "message": "46464",
+      "time": "2024-11-08T23:48:08"
+    },
+    {
+      "name": "asfsaf",
+      "message": "sdafasfasfa",
+      "time": "2024-11-08T23:47:58"
+    },
+    {
+      "name": "asdasdasd",
+      "message": "213721874267",
+      "time": "2024-11-08T23:43:32"
+    },
+    {
+      "name": "asdbiasdbu",
+      "message": "asdubasudabuio",
+      "time": "2024-11-08T23:41:34"
+    },
+    {
+      "name": "HWOHIDWAIOIOHADWADW",
+      "message": "ADNKLWANKJSKJASDANWjkaDN",
+      "time": "2024-11-08T23:38:40"
+    },
+    {
+      "name": "HELLO DUDE",
+      "message": "HEY WHAT'S UP",
+      "time": "2024-11-08T23:37:17"
+    },
+    {
+      "name": "gbgbgb",
+      "message": "g bgbg",
+      "time": "2024-11-08T23:34:47"
+    },
+    {
+      "name": "HI DUDE",
+      "message": "HEY",
+      "time": "2024-11-08T23:34:25"
+    },
+    {
+      "name": "Hello World",
+      "message": "From me to you!",
+      "time": "2024-11-08T23:34:14"
+    },
+    {
+      "name": "asdsaasdsad",
+      "message": "asdasdasd",
+      "time": "2024-11-08T22:00:04"
+    },
+    {
+      "name": "12345",
+      "message": "sadbasuidbasuidbasiudbasuibdiuasbdiusabiduasbdiubasuidbuiasbdiuasbdiuasbuidsbaidbsuibuid",
+      "time": "2024-11-08T20:19:12"
+    },
+    {
+      "name": "safasf",
+      "message": "asfsafasf",
+      "time": "2024-11-08T20:08:02"
+    },
+    {
+      "name": "hfdgdfg",
+      "message": "fdgdfgdfgf",
+      "time": "2024-11-08T19:53:43"
+    },
+    {
+      "name": "asdfas",
+      "message": "asdasd",
+      "time": "2024-11-08T19:52:30"
+    },
+    {
+      "name": "2",
+      "message": "asdas",
+      "time": "2024-11-08T19:52:22"
+    },
+    {
+      "name": "343vdss12",
+      "message": "sad2",
+      "time": "2024-11-08T19:51:44"
+    },
+    {
+      "name": "sadsa",
+      "message": "sadasasd",
+      "time": "2024-11-08T19:51:29"
+    },
+    {
+      "name": "asdasd",
+      "message": "asdas",
+      "time": "2024-11-08T19:50:43"
+    },
+    {
+      "name": "asdas",
+      "message": "asdas",
+      "time": "2024-11-08T19:50:41"
+    },
+    {
+      "name": "sadasdas",
+      "message": "sadasda",
+      "time": "2024-11-08T19:50:39"
+    },
+    {
+      "name": "asdsad",
+      "message": "asdasdsa",
+      "time": "2024-11-08T19:44:00"
+    },
+    {
+      "name": "ASDASD",
+      "message": "ADASDS",
+      "time": "2024-11-08T19:43:35"
+    },
+    {
+      "name": "ERUC",
+      "message": "T",
+      "time": "2024-11-08T19:43:13"
+    },
+    {
+      "name": "SANSHRAY",
+      "message": "D",
+      "time": "2024-11-08T19:43:09"
+    },
+    {
+      "name": "asdasdas",
+      "message": "asdasdsadsa",
+      "time": "2024-11-08T19:42:25"
+    },
+    {
+      "name": "asdasd",
+      "message": "sadasdasd",
+      "time": "2024-11-08T19:38:06"
+    },
+    {
+      "name": "sadasda",
+      "message": "asdasdasd",
+      "time": "2024-11-08T19:38:02"
+    },
+    {
+      "name": "sadasdasd",
+      "message": "asdasdasd",
+      "time": "2024-11-08T19:37:56"
+    },
+    {
+      "name": "asdasda",
+      "message": "asdasd",
+      "time": "2024-11-08T19:37:48"
+    },
+    {
+      "name": "adasdas",
+      "message": "asdasd",
+      "time": "2024-11-08T19:37:45"
+    },
+    {
+      "name": "lorem",
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "time": "2024-11-08T19:37:29"
+    },
+    {
+      "name": "qwer",
+      "message": "xcv",
+      "time": "2024-11-08T17:32:16"
+    },
+    {
+      "name": "asdas",
+      "message": "asdasd",
+      "time": "2024-11-08T17:07:04"
+    },
+    {
+      "name": "a",
+      "message": "a",
+      "time": "2024-11-08T17:05:07"
+    },
+    {
+      "name": "a",
+      "message": "a",
+      "time": "2024-11-02T16:59:45"
+    },
+    {
+      "name": "asda",
+      "message": "asdas",
+      "time": "2024-11-08T16:59:38"
+    },
+    {
+      "name": "a",
+      "message": "a",
+      "time": "2024-11-08T16:59:38"
+    },
+    {
+      "name": "a",
+      "message": "a",
+      "time": "2024-11-08T16:59:38"
+    },
+    {
+      "name": "testt",
+      "message": "tt",
+      "time": "2024-11-01T16:32:38"
+    },
+    {
+      "name": "asdsaasdsad",
+      "message": "asdasda",
+      "time": "2024-10-18T16:30:46"
+    },
+    {
+      "name": "test",
+      "message": "asdada",
+      "time": "2024-10-31T16:07:57"
+    },
+    {
+      "name": "dasd",
+      "message": "asdas",
+      "time": "2024-11-01T16:06:07"
+    },
+    {
+      "name": "a",
+      "message": "a",
+      "time": "2024-01-08T16:02:27"
+    },
+    {
+      "name": "grgsd",
+      "message": "asdas",
+      "time": "2023-11-08T15:50:35"
+    },
+    {
+      "name": "asdsadas",
+      "message": "asdasdas",
+      "time": "2023-11-07T15:29:54"
+    },
+    {
+      "name": "wiley",
+      "message": "There\u2019s been lots of complications: as Sydnee would say, \u201cI hate it here\u201d",
+      "time": "2023-09-22T22:00:00"
+    },
+    {
+      "name": "randy",
+      "message": "I was basically here every single time... except half the time",
+      "time": "2023-08-18T15:15:13"
+    },
+    {
+      "name": "Alan",
+      "message": "I want to get the chicken fried chicken. It\u2019s also vegan",
+      "time": "2023-08-11T19:01:06"
+    },
+    {
+      "name": "nate",
+      "message": "yes chef!",
+      "time": "2023-04-28T11:19:12"
+    },
+    {
+      "name": "Ru",
+      "message": "no, don't slay me",
+      "time": "2023-03-03T20:06:23"
+    },
+    {
+      "name": "Josh Smith",
+      "message": "Testing testing, is this thing on?",
+      "time": "2023-03-02T11:51:06"
+    },
+    {
+      "name": "Jane Doe",
+      "message": "This quote is quite a bit longer than the other ones just to make things interesting. This shouldn't be too difficult to handle, but your design should be able to adapt to all sorts of edge cases. Will your application be able to handle this properly? Or will the text spill over atrociously or even get cut off? Also, how are you doing? I hope you're doing well. Have a Hack at UCI day!",
+      "time": "2023-03-02T11:48:17"
+    },
+    {
+      "name": "randy",
+      "message": "I love technology",
+      "time": "2023-02-15T16:46:22"
+    },
+    {
+      "name": "pham",
+      "message": "i'm a resident gaslighter",
+      "time": "2023-01-25T17:58:31"
+    },
+    {
+      "name": "t\u00e6",
+      "message": "slay, girlboss",
+      "time": "2022-11-03T20:23:54"
+    },
+    {
+      "name": "rieko",
+      "message": "Drink more water",
+      "time": "2021-02-21T22:34:59"
+    },
+    {
+      "name": "Peter Anteater",
+      "message": "Zot Zot Zot!",
+      "time": "1965-11-30T13:52:09"
+    }
+  ]
 }

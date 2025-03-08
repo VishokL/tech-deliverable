@@ -1,9 +1,12 @@
 import React from "react";
 
 function Quote({ quote, getColorByName }) {
-  const color = getColorByName(quote.name);
+  const accentColor = getColorByName(quote.name);
   return (
-    <div className="quote-card" style={{ backgroundColor: color }}>
+    <div
+      className="quote-card"
+      style={{ borderLeft: `4px solid ${accentColor}` }}
+    >
       <div className="quote-header">
         <strong>{quote.name}</strong>: {quote.message}
       </div>
