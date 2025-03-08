@@ -89,4 +89,5 @@ def get_messages(max_age: str = Query("all")):
         max_date = time_now - age_map[max_age]
         return [quote for quote in database["quotes"] if datetime.fromisoformat(quote["time"]) >= max_date]
 
+    database["quotes"].reverse()
     return database["quotes"]
